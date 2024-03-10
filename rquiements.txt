@@ -1,0 +1,5 @@
+login page
+crud admin page 
+generate calendar
+profile page
+students class list

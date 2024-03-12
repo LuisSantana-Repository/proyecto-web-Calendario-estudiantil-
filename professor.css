@@ -1,0 +1,7 @@
+.hidden{
+    display: none;
+}
+
+#chooseYourClass:checked{
+    display: contents;
+}

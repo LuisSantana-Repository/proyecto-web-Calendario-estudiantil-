@@ -311,8 +311,24 @@
                             ></button>
                         </div>
                         <div class="modal-body">
-                            <h4>Students</h4>
+                            
                             <div class="container-fluid">
+                                
+                                <div class="input-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder=""
+                                        aria-label="Button"
+                                        aria-describedby=""
+                                    />
+                                    <button class="btn btn-outline-secondary" type="button" id="">
+                                        Search
+                                    </button>
+                                </div>
+
+
+                                <h4>Students</h4>
                                 <table style=" border: 1px solid black;
                                 border-collapse: collapse;">
                                     <tr>
@@ -557,6 +573,18 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid">
+                                <div class="input-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder=""
+                                        aria-label="Button"
+                                        aria-describedby=""
+                                    />
+                                    <button class="btn btn-outline-secondary" type="button" id="">
+                                        Search
+                                    </button>
+                                </div>
                                 <table class="table">
                                     <thead>
                                       <tr>
@@ -704,6 +732,29 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid">
+                                <!-- Button in the end -->
+                                <div class="input-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        aria-label="Text input with dropdown button"
+                                        
+                                    />
+                                    <button
+                                        class="btn btn-outline-secondary dropdown-toggle"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Search
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Classroom</a></li>
+                                        <li><a class="dropdown-item" href="#">Capacity ></a></li>
+                                        <li><a class="dropdown-item" href="#">Capacity <</a></li>
+                                    </ul>
+                                </div>
+
                                 <table class="table">
                                     <thead>
                                       <tr>
@@ -834,6 +885,18 @@
                                                 data-bs-parent="#accordionFlushExample"
                                             >
                                                 <div class="accordion-body">
+                                                    <div class="input-group mb-3">
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder=""
+                                                            aria-label="Button"
+                                                            aria-describedby=""
+                                                        />
+                                                        <button class="btn btn-outline-secondary" type="button" id="">
+                                                            Search
+                                                        </button>
+                                                    </div>
                                                     <div class="list-group">
                                                         <label class="list-group-item">
                                                             <input class="form-check-input me-1" type="checkbox" value="" />
@@ -1000,4 +1063,5 @@
         // Use above variables to manipulate the DOM
     });
 </script>
+
 

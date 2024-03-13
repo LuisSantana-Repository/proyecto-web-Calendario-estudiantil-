@@ -135,13 +135,13 @@
                             aria-label="Close"
                         ></button>
                     </div>
-                    <div class="modal-body">
-                        <form action="">
+                    <form action="">
+                        <div class="modal-body">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend col-2">
                                     <label class="input-group-text" for="chooseYourClass">Class: </label>
                                 </div>
-                                <select class="custom-select col-10" id="chooseYourClass">
+                                <select class="custom-select col-10" id="chooseYourClass" required>
                                     <option selected>Choose One</option>
                                     <option value="1">Programacion Orientada a Objetos</option>
                                     <option value="2">Desarrollo de Aplicaciones y Servicios Web</option>
@@ -159,7 +159,7 @@
                                             <div class="input-group-prepend col-5">
                                                 <label class="input-group-text" for="1-class-modality">Modality: </label>
                                             </div>
-                                            <select class="custom-select col-7" id="1-class-modality">
+                                            <select class="custom-select col-7" id="1-class-modality" required>
                                                 <option selected>Choose One</option>
                                                 <option value="1">In Person</option>
                                                 <option value="2">Online</option>
@@ -173,7 +173,7 @@
                                             <div class="input-group-prepend col-3">
                                                 <label class="input-group-text" for="1-class-day">Day: </label>
                                             </div>
-                                            <select class="custom-select col-9" id="1-class-day">
+                                            <select class="custom-select col-9" id="1-class-day" required>
                                                 <option selected>Choose One</option>
                                                 <option value="1">Monday</option>
                                                 <option value="2">Tuesday</option>
@@ -189,7 +189,7 @@
                                             <div class="input-group-prepend col-4">
                                                 <label class="input-group-text" for="1-class-time">Time: </label>
                                             </div>
-                                            <select class="custom-select col-8" id="1-class-time">
+                                            <select class="custom-select col-8" id="1-class-time" required>
                                                 <option selected>Choose One</option>
                                                 <option value="1">7:00-9:00</option>
                                                 <option value="2">9:00-11:00</option>
@@ -207,7 +207,7 @@
                                             <div class="input-group-prepend col-6">
                                                 <label class="input-group-text" for="1-class-classroom">Classroom: </label>
                                             </div>
-                                            <select class="custom-select col-6" id="1-class-classroom">
+                                            <select class="custom-select col-6" id="1-class-classroom" required>
                                                 <option selected>Choose One</option>
                                                 <option value="1">T-205</option>
                                                 <option value="2">T-202</option>
@@ -353,16 +353,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="modal-footer">
+                            <button
+                                type="submit"
+                                class="btn btn-success"
+                                data-bs-dismiss="modal"
+                            >  
+                                Confirm Course Aplication
+                            </button>   
+                        </div>
                     </form>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-success"
-                            data-bs-dismiss="modal"
-                        >  
-                            Confirm Course Aplication
-                        </button>   
-                    </div>
                 </div>
             </div>
         </div>

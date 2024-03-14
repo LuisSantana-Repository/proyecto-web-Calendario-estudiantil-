@@ -311,8 +311,24 @@
                             ></button>
                         </div>
                         <div class="modal-body">
-                            <h4>Students</h4>
+                            
                             <div class="container-fluid">
+                                
+                                <div class="input-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder=""
+                                        aria-label="Button"
+                                        aria-describedby=""
+                                    />
+                                    <button class="btn btn-outline-secondary" type="button" id="">
+                                        Search
+                                    </button>
+                                </div>
+
+
+                                <h4>Students</h4>
                                 <table style=" border: 1px solid black;
                                 border-collapse: collapse;">
                                     <tr>
@@ -557,12 +573,25 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid">
+                                <div class="input-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder=""
+                                        aria-label="Button"
+                                        aria-describedby=""
+                                    />
+                                    <button class="btn btn-outline-secondary" type="button" id="">
+                                        Search
+                                    </button>
+                                </div>
                                 <table class="table">
                                     <thead>
                                       <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Subject</th>
                                         <th scope="col">Area</th>
+                                        <th scope="col">info</th>
                                         <th scope="col">Eliminate</th>
                                       </tr>
                                     </thead>
@@ -573,6 +602,16 @@
                                         </th>
                                         <td>Programacion Orientada a Objetos</td>
                                         <td>ISC</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-lg"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#info"
+                                            >
+                                            <i class="bi bi-info-circle-fill"></i>
+                                            </button>
+                                        </td>
                                         <td><div class="d-grid gap-2">
                                             <button
                                                 type="button"
@@ -693,6 +732,29 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid">
+                                <!-- Button in the end -->
+                                <div class="input-group mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        aria-label="Text input with dropdown button"
+                                        
+                                    />
+                                    <button
+                                        class="btn btn-outline-secondary dropdown-toggle"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Search
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Classroom</a></li>
+                                        <li><a class="dropdown-item" href="#">Capacity ></a></li>
+                                        <li><a class="dropdown-item" href="#">Capacity <</a></li>
+                                    </ul>
+                                </div>
+
                                 <table class="table">
                                     <thead>
                                       <tr>
@@ -776,49 +838,84 @@
                                             aria-describedby="prefixId"
                                         />
                                     </div>
-                                    <div
-                                        class="btn-group"
-                                        role="group"
-                                        aria-label="Basic checkbox toggle button group"
-                                    >
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="prefixId">Abreviation</span>
                                         <input
-                                            type="radio"
-                                            class="btn-check"
-                                            name="btnradio"
-                                            id="btncheck1"
-                                            autocomplete="off" checked
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            class="form-control"
+                                            placeholder=""
+                                            aria-describedby="prefixId"
                                         />
-                                        <label
-                                            class="btn btn-outline-primary"
-                                            for="btncheck1"
-                                            >ISC</label
-                                        >
+                                    </div>
                                     
-                                        <input
-                                            type="radio"
-                                            class="btn-check"
-                                            name="btnradio"
-                                            id="btncheck2"
-                                            autocomplete="off"
-                                        />
-                                        <label
-                                            class="btn btn-outline-primary"
-                                            for="btncheck2"
-                                            >Humanidades</label
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Subject</label>
+                                        <select
+                                            class="form-select form-select-lg"
+                                            name=""
+                                            id=""
                                         >
-                                    
-                                        <input
-                                            type="radio"
-                                            class="btn-check"
-                                            name="btnradio"
-                                            id="btncheck3"
-                                            autocomplete="off"
-                                        />
-                                        <label
-                                            class="btn btn-outline-primary"
-                                            for="btncheck3"
-                                            >Negocio</label
-                                        >
+                                            <option selected>Select one</option>
+                                            <option value="">Ingenier</option>
+                                            <option value="">Licenciature</option>
+                                            <option value="">Arts</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="true"
+                                                    aria-controls="flush-collapseOne"
+                                                >
+                                                    Dependancies
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="flush-collapseOne"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    <div class="input-group mb-3">
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder=""
+                                                            aria-label="Button"
+                                                            aria-describedby=""
+                                                        />
+                                                        <button class="btn btn-outline-secondary" type="button" id="">
+                                                            Search
+                                                        </button>
+                                                    </div>
+                                                    <div class="list-group">
+                                                        <label class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" />
+                                                            Programacion Oreintada a objetos
+                                                        </label>
+                                                        <label class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" />
+                                                            Administracion de Sistemas
+                                                        </label>
+                                                        <label class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" />
+                                                            Servicios Seguros
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                     
                                 </div>
@@ -900,3 +997,71 @@
         ></script>
     </body>
 </html>
+
+
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div
+    class="modal fade"
+    id="info"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Dependencies
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <ol>
+                        <li>
+                            Desarollo de aplicaciones web
+                        </li>
+                        <li>
+                            Base de datos Relacionales
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var modalId = document.getElementById('modalId');
+
+    modalId.addEventListener('show.bs.modal', function (event) {
+          // Button that triggered the modal
+          let button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          let recipient = button.getAttribute('data-bs-whatever');
+
+        // Use above variables to manipulate the DOM
+    });
+</script>
+
+
